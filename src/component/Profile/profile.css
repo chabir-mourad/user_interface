@@ -1,0 +1,16 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+  
+    justify-content:space-around
+}
+.adress {
+    list-style: none;
+}
+.nameOfUser {
+  text-align: center;
+  color: chocolate;
+}
+.jobOfuser {
+    
+}
