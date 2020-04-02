@@ -6,6 +6,8 @@ import './profile.css'
 import {Link} from 'react-router-dom'
  
 import {Card,Button} from "react-bootstrap"
+
+import Modals_poster from '../Modal_poster/Modalu_poster';
 function Profile({profile}){
 
   
@@ -18,28 +20,33 @@ function Profile({profile}){
                 
                 
                 .map((el,key)=>( 
-                    <Link to={`/posts/${el.id}`}>
-                    
-               
+                 
+                    <div>
+             
                 <Card style={{ width: '18rem' }} key={key} >
-  <Card.Img variant="top" src="https://learn.pandasuite.com/hc/article_attachments/360002295111/Proprie_te_s_des_images.png" />
+               
+  <Modals_poster/>
+  
   <Card.Body>
                 <Card.Title className="nameOfUser">{el.name} {el.username}</Card.Title>
                 <p className="jobOfuser">{el.company.bs}</p>
     <Card.Text>
-                <h1>adress:</h1>
+                <h1>Adress:</h1>
                 <ul className="adress">
-                <li>street:{el.address.street}</li>
-                <li>suite:{el.address.suite}</li>
-                <li>city: {el.address.city}</li>
-                <li>zipcode: {el.address.zipcode}</li>
+                <li>Street:{el.address.street}</li>
+                <li>Suite:{el.address.suite}</li>
+                <li>City: {el.address.city}</li>
+                <li>Zipcode: {el.address.zipcode}</li>
              
                 </ul>
     </Card.Text>
+    <Link to={`/posts/${el.id}`}>
     <Button variant="outline-success">following</Button>
+    </Link>    
   </Card.Body>
 </Card>
-</Link>             )  ) }
+</div>
+         )  ) }
             </div>
         )
     }

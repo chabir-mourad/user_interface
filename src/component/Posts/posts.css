@@ -1,0 +1,6 @@
+.post_users {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+

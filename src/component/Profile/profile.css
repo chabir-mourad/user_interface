@@ -1,7 +1,7 @@
 .cards {
     display: flex;
     flex-wrap: wrap;
-  
+
     justify-content:space-around
 }
 .adress {
@@ -10,7 +10,9 @@
 .nameOfUser {
   text-align: center;
   color: chocolate;
+  font-size: xx-large
 }
 .jobOfuser {
-    
+    color: blueviolet;
+    font-size: larger;
 }

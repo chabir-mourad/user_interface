@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Axios from 'axios'
 import {Card} from 'react-bootstrap'
 import { Link } from 'react-router-dom';
+import '../Posts/posts.css'
  class Posts extends Component {
      state ={
          posts:[]
@@ -31,7 +32,7 @@ import { Link } from 'react-router-dom';
                 
 
                 <Link to={`/comments/${el.userId}`}>
-                  <Card border="primary" style={{ width: '18rem' }}>
+                  <Card border="primary" style={{ width: '18rem' }} className="post_users">
     <Card.Header>Header</Card.Header>
     <Card.Body>
                 <Card.Title>{el.title}</Card.Title>
